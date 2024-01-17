@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ... [Previous CSS code] ... */
+
+/* Section 1 styles */
+/* ... [Previous CSS code] ... */
+
+/* Section 1 styles */
+.looking-section {
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 0px;
+    overflow: hidden; /* Hide overflow to prevent scrollbar */
+}
+
+.half-page {
+    width: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.half-page h1 {
+    font-size: 5em;
+    margin: 0;
+}
+
+/* Wall styles */
+.wall-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wall {
+    background-color: #d7cdc7;
+    width: 0%; /* Double the width to ensure it covers the entire screen */
+    height: 100%;
+    float: right; /* Start from the rightmost end */
+    animation: expandAnimation 3s forwards; /* Adjust the duration as needed */
+}
+
+@keyframes expandAnimation {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 50vw;
+    }
+    100% {
+        width: 50vw;
+     
+    }
+}
+
+.peeking-girl {
+    background-image: url('images/girl.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    position:relative;
+    left: 45%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Initially hide the peeking girl */
+}
+
+/* Media Query for adjusting font size on smaller screens */
+@media (max-width: 768px) {
+    .half-page h1 {
+        font-size: 3em; /* Adjust the font size for smaller screens */
+    }
+}
+
+/* ... [Remaining styles] ... */
+
+/* ... [Remaining styles] ... */
+
+
+.name-section {
+    background-color: #eee;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+/* ... (Remaining styles remain the same) ... */
+
+/* Section 3 styles */
+.more-about-me {
+    background-color: #ddd;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Subsection in Section 3 styles */
+.more-about-me .subsection {
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+/* ... (Previous CSS code for Section 4 removed) ... */
+/* Section 4 styles */
+.details-section {
+    background-color: #bbb;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Subsection in Section 4 styles */
+/* Interests Details styles */
+
+
+
+
+.details-section #educationDetails {
+    background-color: #f0f0f0; /* Different background color for Education Details */
+    /* Replace with the path to your image */
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Set text color to white or any other contrasting color */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+/* Interests Details styles */
+.details-section #interestsDetails {
+  
+    background-color: #e0e0e0;
+     /* Different background color for Interests Details */
+    background-position: center;
+    background-size: cover;
+}
+
+/* Contact Details styles */
+.details-section #contactDetails {
+  
+    background-color: #d0d0d0; /* Different background color for Contact Details */
+}
+.more-about-me .education {
+     /* Add the path to your education image */
+    background-size: 330px;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+.more-about-me .skills {
+    /* Add the path to your education image */
+ 
+   background-position: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+/* Subsection: Interests */
+.more-about-me .interests {
+  
+    background-size: 300px;
+    background-position: center; /* Add the path to your interests image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+/* Subsection: Contact */
+.more-about-me .contact {
+    background-image: url('wall.jpeg'); /* Add the path to your contact image */
+    background-size: 300px;
+    background-position: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+/* Cards styles */
+.subsection {
+    background-size: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 300px; /* Adjust the height as needed */
+    width: 100%; /* Add this line to ensure the card takes up the full width */
+}
+/* Add this to your stylesheet or in a <style> tag */
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list > li {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.skills-list ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.skills-list ul li {
+    font-weight: normal;
+    margin-top: 5px;
+}

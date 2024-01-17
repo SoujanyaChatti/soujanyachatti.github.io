@@ -1,0 +1,619 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Your Name - Portfolio</title>
+
+</head>
+
+<body>
+    <!-- Add these links to your HTML file to include Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Section 1: Looking for someone? with peeking girl animation -->
+    <!-- Add this to your existing HTML structure -->
+    <section class="looking-section">
+        <div class="half-page">
+            <h1>Looking for someone?</h1>
+        </div>
+        <div class="wall-section d-none d-md-block">
+            <!-- Add responsive class to hide on smaller screens -->
+            <div class="wall" id="wall"></div>
+            <div class="peeking-girl" id="peekingGirl"></div>
+            <style></style>
+        </div>
+    </section>
+
+    <!-- Section 2: Your name and brief about yourself -->
+    <section class="name-section">
+        <h2>Soujanya Chatti</h2>
+        <p>I am 19 year old girl from the coastal city of Vizag,India.I am currectly pursuing my Bachelor of Technology
+            in Computer Science.Web designing,Articial Intelligence and programming are my areas of interests.</p>
+    </section>
+    <!-- Section 3: More about me? -->
+    <section class="more-about-me">
+        <h2>More about me?</h2>
+        <!-- Bootstrap Carousel -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-around">
+                        <div class="subsection education" data-target="#educationSection"
+                            style="background-image: url('images/educatio.jpeg');"></div>
+                        <div class="subsection interests" data-target="#interestsSection"
+                            style="background-image: url('images/interests-image.webp');"></div>
+                        <div class="subsection contact" data-target="#contactSection"
+                            style="background-image: url('images/contact.webp');"></div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- Add additional carousel items as needed -->
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-around">
+                        <div class="subsection skills" data-target="#skillsSection"
+                            style="background-image: url('images/skills.png');"></div>
+                        <div class="subsection CoursesSection" data-target="#CoursesSection"
+                            style="background-image: url('images/course.jpeg');"></div>
+
+                        <!-- Add content for the second set of cards -->
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- Section 4: Details for Education, Interests, Contact -->
+    <!-- Section 4: Details for Education, Interests, Contact -->
+    <!-- Section 4: Details for Education, Interests, Contact -->
+    <!-- Section 4: Details for Education, Interests, Contact -->
+    <section class="details-section" id="detailsSection">
+        <div class="container-fluid">
+            <!-- Subsection: Education -->
+            <div class="row" id="educationSection">
+                <div class="col-md-12">
+                    <h2>Education Details</h2>
+                    <!-- Bootstrap Collapsible Panels -->
+                    <div id="educationAccordion">
+                        <!-- Schooling -->
+                        <!-- School Toggle -->
+                        <!-- Schooling -->
+                        <!-- School Toggle -->
+                        <div class="card">
+                            <div class="card-header" id="schoolHeading">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#schoolCollapse"
+                                        aria-expanded="true" aria-controls="schoolCollapse">
+                                        School
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="schoolCollapse" class="collapse show" aria-labelledby="schoolHeading"
+                                data-parent="#educationAccordion">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <!-- Left column for text content -->
+                                        <div class="col-md-6 text-left">
+                                            <!-- Add your text for the school section here -->
+                                            <p>Name : Timpany Senior Secondary School.</p>
+                                            <p>Located in Vizag,India.</p>
+                                            <p>Timeline: 2008-2020 (LKG-10th Grade)</p>
+                                            <p>Grade 10 CBSE percentage: 98(school's first rank)</p>
+                                            <p>While in school, I had served as a captain , participated and won in
+                                                numerous debate,public speaking and writing contests.</p>
+                                            <p>It is in this very school that I had developed an affinity towards
+                                                computer science.</p>
+
+                                        </div>
+                                        <!-- Right column for image -->
+                                        <div class="col-md-6">
+                                            <img src="images/education-image.png" alt="School Image" class="img-fluid"
+                                                style="max-width: 100%;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Grade 10-12 Toggle -->
+                        <div class="card">
+                            <div class="card-header" id="grade10Heading">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#grade10Collapse" aria-expanded="false"
+                                        aria-controls="grade10Collapse">
+                                        Grade 10-12
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="grade10Collapse" class="collapse" aria-labelledby="grade10Heading"
+                                data-parent="#educationAccordion">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <!-- Left column for text content -->
+                                        <div class="col-md-6 text-left">
+                                            <!-- Add your text and images for the Grade 10-12 section here -->
+                                            <p>After tenth grade, I chose to study Mathematics,Physics and Chemistry as
+                                                my primary subjects.</p>
+                                            <p>Name of college: Sri Venkatewara College</p>
+                                            <p>Located in Vizag,India</p>
+                                            <p>Timeline:2020-2022</p>
+                                            <p>Final Percentage : 94.1</p>
+
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img src="images/mpc.jpeg" alt="Grade 10-12 Image" class="img-fluid"
+                                                style="max-width:50%;">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- College Toggle -->
+                        <div class="card">
+                            <div class="card-header" id="collegeHeading">
+                                <h5 class="mb-0">
+
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collegeCollapse" aria-expanded="false"
+                                        aria-controls="collegeCollapse">
+                                        College
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collegeCollapse" class="collapse" aria-labelledby="collegeHeading"
+                                data-parent="#educationAccordion">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <!-- Left column for text content -->
+                                        <div class="col-md-6 text-left">
+                                            <!-- Add your text and images for the college section here -->
+                                            <p>Name: Gayatri Vidya Parishad College of Engineering(Autonomous)</p>
+                                            <p>Course: Bachelor or Technology in Computer Science</p>
+                                            <p>Timeline : 2022 - present</p>
+                                            <p>Courses learned: Database management systems, Computer Organisation,
+                                                Switching theory and logic design(other than languages)</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img src="images/college.jpeg" alt="College Image" class="img-fluid">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Subsection: Interests -->
+                        <!-- Subsection: Interests -->
+                        <div class="row">
+                            <div class="col-md-12 " id="interestsSection">
+                                <h2 class="pt-3">Interests</h2>
+                                <!-- Bootstrap Collapsible Panels for Interests -->
+                                <div id="interestsAccordion">
+                                    <!-- Programming Toggle -->
+                                    <div class="card">
+                                        <div class="card-header" id="programmingHeading">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse"
+                                                    data-target="#programmingCollapse" aria-expanded="true"
+                                                    aria-controls="programmingCollapse">
+                                                    Programming
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="programmingCollapse" class="collapse show"
+                                            aria-labelledby="programmingHeading" data-parent="#interestsAccordion">
+                                            <div class="card-body">
+                                                <!-- Add your text for the Programming section here -->
+                                                <div class="text-left p-3">
+                                                    <h3
+                                                        style="background-color: gray; color: white; padding: 10px; margin-bottom: 20px;">
+                                                        Competitive Programming</h3>
+                                                    <p> -> As a dedicated programmer, I am passionate about coding and
+                                                        solving real-world problems through technology.</p>
+
+                                                    <!-- Code Ninjas Rank -->
+
+                                                    <p>-> I have achieved the rank of Specialist(6) at Code Ninjas,
+                                                        showcasing my commitment to continuous learning and excellence
+                                                        in coding skills.</p>
+
+
+                                                    <!-- Other Programming Achievements or Experiences -->
+
+                                                    <p>-> Throughout my coding journey, I have actively participated in
+                                                        coding competitions, hackathons, and collaborative projects,
+                                                        gaining valuable experience and expanding my skill set.</p>
+                                                </div>
+                                                <!-- Add any common content for Programming section here -->
+
+                                                <!-- Game Designing Section -->
+                                                <div class="text-left p-3">
+                                                    <h3
+                                                        style="background-color: gray; color: white; padding: 10px; margin-bottom: 20px;">
+                                                        Game Designing</h3>
+
+                                                    <!-- Add your text and images for the Game Designing section here -->
+                                                    <p>I have been introduced to the world of game development during my
+                                                        4 month course at WhitehatJr in 2020 after I completed 10th
+                                                        grade. From then, I have developed over 30 mini games using
+                                                        html, javascript, and css. I have continued developing small
+                                                        games like tictactoe and now working on integrating AI into
+                                                        them. Navigate to my GitHub for the repositories of the games I
+                                                        have made.</p>
+                                                    <div class="p-3">
+                                                        <img src="images/mario.png" alt="Game Designing Image"
+                                                            class="img-fluid" style="max-width:50%;">
+                                                        <img src="images/blocks.png" alt="Game Designing Image"
+                                                            class="img-fluid" style="max-width:40%;">
+                                                    </div>
+                                                </div>
+
+                                                <!-- Artificial Intelligence Section -->
+                                                <div class="text-left p-3">
+                                                    <h3
+                                                        style="background-color: gray; color: white; padding: 10px; margin-bottom: 20px;">
+                                                        Artificial Intelligence</h3>
+
+
+
+                                                    <!-- Add your text and images for the Artificial Intelligence section here -->
+                                                    <p>-> I have a keen interest in Artificial Intelligence and its
+                                                        applications. Exploring the realms of machine learning and
+                                                        neural networks has been a fascinating journey for me.</p>
+
+                                                    <!-- Additional AI-related matter -->
+                                                    <p>-> Driven by curiosity, I have completed various courses and
+                                                        projects in Artificial Intelligence, honing my skills in areas
+                                                        such as machine learning algorithms and deep neural networks.
+                                                    </p>
+
+                                                    <!-- Mention any specific aspects you are interested in -->
+                                                    <p>-> Specifically, I am intrigued by the potential of AI in solving
+                                                        complex problems and its role in shaping the future of
+                                                        technology.</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Quantum Computing Toggle -->
+                        <div class="card">
+                            <div class="card-header" id="quantumComputingHeading">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#quantumComputingCollapse" aria-expanded="false"
+                                        aria-controls="quantumComputingCollapse">
+                                        Quantum Computing
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="quantumComputingCollapse" class="collapse"
+                                aria-labelledby="quantumComputingHeading" data-parent="#interestsAccordion">
+                                <div class="card-body">
+                                    <!-- Add your text and images for the Quantum Computing section here -->
+                                    <p style="text-align:left;">In my first year of BTech, I have developed an interest
+                                        in quantum technology and the future it offers.Enamored by the
+                                        things that can be made possible with quantum computers , I have enrolled myself
+                                        in a course on quantum computing offered by
+                                        IISc Bangalore and QPiAI.I look forward to exploring quantum technology domains
+                                        like quantum optimization,error correction and more.
+
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Reading Books Toggle -->
+                        <!-- Reading Books Toggle -->
+
+                        <!-- Reading Books Toggle -->
+                        <div class="card">
+                            <div class="card-header" id="readingBooksHeading">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#readingBooksCollapse" aria-expanded="false"
+                                        aria-controls="readingBooksCollapse">
+                                        Reading Books
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="readingBooksCollapse" class="collapse" aria-labelledby="readingBooksHeading"
+                                data-parent="#interestsAccordion">
+                                <div class="card-body">
+                                    <!-- Add your text for the Reading Books section here -->
+                                    <p>I have always been an avid reader who enjoys reading a variety of genres-non
+                                        fiction,fiction,novels,fantasy,biographies.
+                                        These are some of the books I really enjoyed:
+                                    </p>
+
+                                    <!-- Bootstrap row and columns to display book recommendations side-by-side -->
+                                    <div class="row">
+                                        <!-- Book 1 -->
+                                        <div class="col-md-4 mb-4">
+                                            <a href="book1-link" class="list-group-item list-group-item-action"
+                                                target="_blank">
+                                                <h5 class="mb-1">The Book Thief</h5>
+                                                <p class="mb-1">Author: Markus Zusak</p>
+                                                <small>Novel / Historical Fiction</small>
+                                            </a>
+                                        </div>
+
+                                        <!-- Book 2 -->
+                                        <div class="col-md-4 mb-4">
+                                            <a href="book2-link" class="list-group-item list-group-item-action"
+                                                target="_blank">
+                                                <h5 class="mb-1">Sapiens</h5>
+                                                <p class="mb-1">Yuval Noah Harari</p>
+                                                <small>Non-Fiction</small>
+                                            </a>
+                                        </div>
+
+                                        <!-- Book 3 -->
+                                        <div class="col-md-4 mb-4">
+                                            <a href="https://www.goodreads.com/book/show/28187.The_Lightning_Thief"
+                                                class="list-group-item list-group-item-action" target="_blank">
+                                                <h5 class="mb-1">The Lightning Thief</h5>
+                                                <p class="mb-1">Rick Riordan</p>
+                                                <small>Young Adult Fiction / Fantasy</small>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-header" id="financialmarkets">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#financialmarketsCollapse" aria-expanded="false"
+                                        aria-controls="financialmarketsCollapse">
+                                        Financial Markets
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="financialmarketsCollapse" class="collapse"
+                                aria-labelledby="financialmarketsHeading" data-parent="#interestsAccordion">
+                                <div class="card-body">
+                                    <!-- Add your text and images for the Reading Books section here -->
+                                    <p>I have taken interest in financial markets,financialisation,and especially
+                                        fintech in my first year of engineering.I look forward to exploring the
+                                        intersection of
+                                        finance and computer science and wish to work on a project.
+                                    </p>
+                                    <p>Having done on a comprehensive course on the topic on coursera offered by the
+                                        world renowned Nobel prize winner Robert Shiller,I have gained a bit of
+                                        knowledge
+                                        on the topic of the course,financial markets.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Subsection: Skills -->
+            <!-- Subsection: Skills -->
+            <div class="row" id="skillsSection">
+                <div class="col-md-12">
+                    <h2 class="pt-3">Skills and Strengths</h2>
+
+                    <!-- Bootstrap Collapsible Panels for Skills -->
+                    <div id="skillsAccordion">
+                        <!-- Technical Skills Toggle -->
+                        <div class="card">
+                            <div class="card-header" id="technicalSkillsHeading">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse"
+                                        data-target="#technicalSkillsCollapse" aria-expanded="true"
+                                        aria-controls="technicalSkillsCollapse">
+                                        Technical Skills
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="technicalSkillsCollapse" class="collapse show"
+                                aria-labelledby="technicalSkillsHeading" data-parent="#skillsAccordion">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Skill</th>
+                                                    <th>Strength</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Programming Languages</td>
+                                                    <td>C, C++, Java, Python, JavaScript</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Web Development</td>
+                                                    <td>HTML, CSS, React</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Artificial Intelligence</td>
+                                                    <td>supervised,unsupervised machine learning</td>
+                                                </tr>
+                                                <!-- Add more rows for additional technical skills and strengths -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Non-Technical Skills Toggle -->
+                        <div class="card">
+                            <div class="card-header" id="nonTechnicalSkillsHeading">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#nonTechnicalSkillsCollapse" aria-expanded="false"
+                                        aria-controls="nonTechnicalSkillsCollapse">
+                                        Non-Technical Skills
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="nonTechnicalSkillsCollapse" class="collapse"
+                                aria-labelledby="nonTechnicalSkillsHeading" data-parent="#skillsAccordion">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Skill</th>
+                                                    <th>Strength</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Communication</td>
+                                                    <td>Verbal and written communication , public speaking</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Teamwork</td>
+                                                    <td>Collaboration and teamwork</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Product Design</td>
+                                                    <td>analysis,survey,planning,designing,prototyping</td>
+                                                </tr>
+                                                <!-- Add more rows for additional non-technical skills and strengths -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subsection: Courses and Certifications -->
+            <!-- Subsection: Courses and Certifications -->
+            <div class="row">
+                <div class="col-md-12" id="CoursesSection">
+                    <h2 class="pt-3">Courses and Certifications</h2>
+               
+            <!-- Bootstrap Card Deck for Courses -->
+        <!-- Bootstrap Card Deck for Courses -->
+<div class="card-deck">
+    <!-- Course Card 1 -->
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Machine Learning Specialisation</h5>
+            <p class="card-text">Offered by: deeplearning.ai and Stanford on Coursera.</p>
+            <a href="https://coursera.org/verify/specialization/RQXT4T2NU5C2" target="_blank" class="btn btn-primary btn-md">Certificate</a>
+        </div>
+    </div>
+    
+    <!-- Course Card 2 -->
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Mathematics for Computer Science</h5>
+            <p class="card-text">Offered by: University of London on Coursera.</p>
+            <a href="https://coursera.org/verify/P9YWNQRVBNYH" target="_blank" class="btn btn-primary btn-md">Certificate</a>
+        </div>
+    </div>
+
+    <!-- Add more Course Cards as needed -->
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Financial Markets</h5>
+            <p class="card-text">Offered by: Yale University on Coursera</p>
+            <a href="https://coursera.org/verify/6FMXXD9TPJ27" target="_blank" class="btn btn-primary btn-md">Certificate</a>
+        </div>
+    </div>
+
+    <!------->
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Product Design</h5>
+            <p class="card-text">Offered by: DelftX on EdX</p>
+            <a href="https://courses.edx.org/certificates/1598a8018c404c48bbc61220db9cee0a" target="_blank" class="btn btn-primary btn-md">Certificate</a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Full-stack Web Development</h5>
+            <p class="card-text">Offered by: devtown </p>
+            <a href="https://cert.devtown.in/verify/5mZi1_ScN" target="_blank" class="btn btn-primary btn-md">Certificate</a>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+            <!-- Subsection: Contact -->
+            <div class="row">
+                <div class="col-md-12" id="contactSection">
+                    <h2 class="pt-3">Contact</h2>
+               
+            <!-- Bootstrap List Group for Contact Links -->
+            <ul class="list-group">
+                <!-- Twitter Link -->
+                <li class="list-group-item">
+                    <a href="https://twitter.com/SoujanyaChatti" target="_blank">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                </li>
+
+                <!-- LinkedIn Link -->
+                <li class="list-group-item">
+                    <a href="https://in.linkedin.com/in/rama-soujanya-7aa251259" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </li>
+
+                <!-- GitHub Link -->
+                <li class="list-group-item">
+                    <a href="https://github.com/SoujanyaChatti" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </li>
+
+                <!-- Email Link -->
+                <li class="list-group-item">
+                    <a href="mailto:ramasoujanya9@gmail.com">
+                        <i class="far fa-envelope"></i> Email
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
